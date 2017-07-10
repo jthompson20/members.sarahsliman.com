@@ -130,10 +130,12 @@
           Power Group
           <small>July 2017</small>
         </h1>
+        <!--
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
           <li class="active"><a href="#">Nutrition</a></li>
         </ol>
+        -->
       </section>
 
       <!-- Main content -->
@@ -141,7 +143,7 @@
         <div class="callout callout-info">
           <h4>Connect on Facebook</h4>
 
-          <p>[facebook-logo] Let's give them reasons to check out the facebook group</p>
+          <p><img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="img-responsive pull left" /> Let's give them reasons to check out the facebook group</p>
         </div>
         <!--
         <div class="callout callout-danger">
@@ -153,9 +155,9 @@
         -->
         <div class="box box-default">
           <div class="box-header with-border">
-            <h3 class="box-title" data-control="week2">July Power Group - Week 3</h3>
+            <h3 class="box-title" data-control="week3">July Power Group - Week 3</h3>
           </div>
-          <div class="box-body week2">
+          <div class="box-body week3">
               
             <div class="row">
               <div class="col-xs-12 col-sm-6">
