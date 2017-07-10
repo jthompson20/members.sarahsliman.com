@@ -141,10 +141,10 @@
 
       <!-- Main content -->
       <section class="content">
-        <div class="callout callout-info" style="min-height:100px;">
+        <div class="callout callout-info facebook-connect" style="min-height:100px;">
           <h4>Connect on Facebook</h4>
 
-          <p><a href="https://www.facebook.com/groups/1442018715889142/" target="_blank"><img style="max-width: 50px;float: left;margin-right: 10px;max-height: 50px;" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="img-responsive pull left" /></a> Be sure to check-in with our Facebook group for tips, encouragement and motivation from the entire Power Group! </p>
+          <p><img style="max-width: 50px;float: left;margin-right: 10px;max-height: 50px;" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="img-responsive pull left" /> Be sure to check-in with our Facebook group for tips, encouragement and motivation from the entire Power Group! </p>
         </div>
         <!--
         <div class="callout callout-danger">
@@ -372,6 +372,10 @@ $(document).ready(function(){
   $('.box-title').on('click',function(){
     var attr  = $(this).data('control');
     $('.' + attr).toggle();
+  });
+
+  $('.facebook-connect').on('click',function(){
+    window.location   = "https://www.facebook.com/groups/1442018715889142/";
   });
 
 
