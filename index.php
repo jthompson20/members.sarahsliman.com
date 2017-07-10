@@ -71,8 +71,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Nutrition <span class="sr-only">(current)</span></a></li>
-            <li class="dropdown">
+            
+            <li class="dropdown" class="active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workouts <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">August</a></li>
@@ -84,6 +84,7 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
+            <li><a href="#">Nutrition </a></li>
           </ul>
           <!--
           <form class="navbar-form navbar-left" role="search">
@@ -140,10 +141,10 @@
 
       <!-- Main content -->
       <section class="content">
-        <div class="callout callout-info">
+        <div class="callout callout-info" style="min-height:100px;">
           <h4>Connect on Facebook</h4>
 
-          <p><img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="img-responsive pull left" /> Let's give them reasons to check out the facebook group</p>
+          <p><a href="https://www.facebook.com/groups/1442018715889142/" target="_blank"><img style="max-width: 50px;float: left;margin-right: 10px;max-height: 50px;" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" class="img-responsive pull left" /></a> Be sure to check-in with our Facebook group for tips, encouragement and motivation from the entire Power Group! </p>
         </div>
         <!--
         <div class="callout callout-danger">
