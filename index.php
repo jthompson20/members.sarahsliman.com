@@ -1,3 +1,25 @@
+<?php
+session_start();
+
+$auth   = (auth())? TRUE: FALSE;
+
+if ( ! $auth):
+  header('Location: /login.php');
+endif;
+
+$page   = (isset(''))
+
+
+// custom functions
+function auth(){
+  return false;
+}
+
+function page(){
+
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,6 +94,7 @@
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
             
+            <!--
             <li class="dropdown" class="active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workouts <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -84,7 +107,10 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-            <li><a href="#">Nutrition </a></li>
+            -->
+            <li><a href="#">Recipes </a></li>
+            <li><a href="#">Workouts </a></li>
+            <li><a href="#">Vlog </a></li>
           </ul>
           <!--
           <form class="navbar-form navbar-left" role="search">
