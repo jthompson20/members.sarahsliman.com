@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$submitted 	= (isset($_POST) && isset($_POST['username'])): TRUE: FALSE;
+$submitted 	= (isset($_POST) && isset($_POST['username']))? TRUE: FALSE;
 if ($submitted):
 
 	print "<pre>";
