@@ -11,7 +11,7 @@ $page   = (isset($_REQUEST['pg']))? $_REQUEST['pg']: '';
 
 // custom functions
 function auth(){
-  return false;
+  return true;
 }
 
 function page(){
