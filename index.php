@@ -7,8 +7,7 @@ if ( ! $auth):
   header('Location: /login.php');
 endif;
 
-$page   = (isset(''))
-
+$page   = (isset($_REQUEST['pg']))? $_REQUEST['pg']: '';
 
 // custom functions
 function auth(){
