@@ -83,7 +83,7 @@ function recipes(){
         'text'    => ''
       ),
     ),
-    'Lunch/Dinner'  => array(
+    'Lunch-Dinner'  => array(
       array(
         'title'   => 'Sweet Potato Hemp Quinoa Bowl',
         'image'   => 'http://placehold.it/640x360',
@@ -492,6 +492,8 @@ function recipes(){
   <!-- /.content-wrapper -->
 
   <?php } else if ($page === 'recipes'){ ?>
+
+  <?php $recipes  = recipes(); ?>
 
   <!-- Full Width Column -->
   <div class="content-wrapper">
