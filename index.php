@@ -147,14 +147,17 @@ function page(){
       <!-- /.container-fluid -->
     </nav>
   </header>
+  
+  <?php if ($page === ''){ ?>
+
   <!-- Full Width Column -->
   <div class="content-wrapper">
     <div class="container">
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Power Group
-          <small>July 2017</small>
+          Power Group | Workouts
+          <small><?php echo date('f Y'); ?></small>
         </h1>
         <!--
         <ol class="breadcrumb">
@@ -352,6 +355,93 @@ function page(){
     <!-- /.container -->
   </div>
   <!-- /.content-wrapper -->
+
+  <?php } else if ($page === 'recipes'){ ?>
+
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Power Group | Recipes
+          <small><?php echo date('f Y'); ?></small>
+        </h1>
+        <!--
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li class="active"><a href="#">Nutrition</a></li>
+        </ol>
+        -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <div class="box box-default">
+          <div class="box-header with-border">
+            <h3 class="box-title" data-control="breakfast">Breakfast</h3>
+          </div>
+          <div class="box-body breakfast">
+              
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="video-container">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/PxV5ogi_5dI" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h2>Week 3 - Day 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <ul>
+                  <li>Keep your elbows tight</li>
+                  <li>bend at the hips</li>
+                  <li>something else</li>
+                </ul>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="video-container">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/PxV5ogi_5dI" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h2>Week 3 - Day 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="video-container">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/PxV5ogi_5dI" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h2>Week 3 - Day 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+
+      </section>
+
+    </div>
+
+  </div>
+
+
+  <?php } ?>
+
+
+
   <footer class="main-footer">
     <div class="container">
       <div class="pull-right hidden-xs">
