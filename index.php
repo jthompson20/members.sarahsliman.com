@@ -157,7 +157,7 @@ function page(){
       <section class="content-header">
         <h1>
           Power Group | Workouts
-          <small><?php echo date('f Y'); ?></small>
+          <small><?php echo date('F Y'); ?></small>
         </h1>
         <!--
         <ol class="breadcrumb">
@@ -365,7 +365,7 @@ function page(){
       <section class="content-header">
         <h1>
           Power Group | Recipes
-          <small><?php echo date('f Y'); ?></small>
+          <small><?php echo date('F Y'); ?></small>
         </h1>
         <!--
         <ol class="breadcrumb">
@@ -387,18 +387,28 @@ function page(){
             <div class="row">
               <div class="col-xs-12 col-sm-6">
                 <div class="video-container">
-                  <iframe width="853" height="480" src="https://www.youtube.com/embed/PxV5ogi_5dI" frameborder="0" allowfullscreen></iframe>
+                  <img src="http://www.placehold.it/640x360" class="img-responsive" />
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6">
-                <h2>Week 3 - Day 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <h2>Egg Fit Muffins</h2>
+                <p>Serving Size – 3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein</p>
+                <p>Ingredients:</p>
                 <ul>
-                  <li>Keep your elbows tight</li>
-                  <li>bend at the hips</li>
-                  <li>something else</li>
+                  <li>12 Eggs</li>
+                  <li>2 Bell Peppers, Chopped</li>
+                  <li>1/2 Cup Chopped Onions</li>
+                  <li>2 Cups Chopped Spinich</li>
+                  <li>Sea Salt</li>
+                  <li>Black Pepper</li>
+                  <li>Tumeric (optional)</li>
                 </ul>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>Directions:</p>
+                <ol>
+                  <li>Combine all ingredients in a bowl and whisk together.</li>
+                  <li>Using a mini muffin pan, pour the mixture in each muffin tin</li>
+                  <li>Makes about 12 muffins</li>
+                </ol>
               </div>
             </div>
 
