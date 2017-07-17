@@ -386,11 +386,6 @@ function page(){
               
             <div class="row">
               <div class="col-xs-12 col-sm-6">
-                <div class="video-container">
-                  <img src="http://www.placehold.it/640x360" class="img-responsive" />
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
                 <h2>Egg Fit Muffins</h2>
                 <p>Serving Size – 3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein</p>
                 <p>Ingredients:</p>
@@ -409,6 +404,11 @@ function page(){
                   <li>Using a mini muffin pan, pour the mixture in each muffin tin</li>
                   <li>Makes about 12 muffins</li>
                 </ol>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="video-container">
+                  <img src="http://www.placehold.it/640x360" class="img-responsive" />
+                </div>
               </div>
             </div>
 
