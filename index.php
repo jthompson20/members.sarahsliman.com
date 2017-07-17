@@ -18,6 +18,138 @@ function page(){
 
 }
 
+function workouts(){
+
+}
+
+function recipes(){
+  return array(
+    'Breakfast'     => array(
+      array(
+        'title'   => 'Egg Fit Muffins',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => '
+                <p>Serving Size – 3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein</p>
+                <p>Ingredients:</p>
+                <ul>
+                  <li>12 Eggs</li>
+                  <li>2 Bell Peppers, Chopped</li>
+                  <li>1/2 Cup Chopped Onions</li>
+                  <li>2 Cups Chopped Spinich</li>
+                  <li>Sea Salt</li>
+                  <li>Black Pepper</li>
+                  <li>Tumeric (optional)</li>
+                </ul>
+                <p>Directions:</p>
+                <ol>
+                  <li>Combine all ingredients in a bowl and whisk together.</li>
+                  <li>Using a mini muffin pan, pour the mixture in each muffin tin</li>
+                  <li>Makes about 12 muffins</li>
+                </ol>'
+      ),
+      array(
+        'title'   => 'Blueberry Protein Smoothie',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Protein Shake',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Protein Overnight Oats',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Protein Greek Yogurt',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Scrambled Eggs and Veggies',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Overnight Quinoa Bowl',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Bacon Asparagus Omelet',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+    ),
+    'Lunch/Dinner'  => array(
+      array(
+        'title'   => 'Sweet Potato Hemp Quinoa Bowl',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Broccoli & Steak Salad',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Taco Bowl',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Grilled Chicken Plate',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Black Bean Pasta',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Quinoa Fried Rice',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Asian Chicken Stir Fry',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Chicken and Broccoli w/Peanut Sauce',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+    ),
+    'Snacks'        => array(
+      array(
+        'title'   => 'Coconut Milk Protein Yogurt',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Edamame',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Almond Milk Protein Shake',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      ),
+      array(
+        'title'   => 'Apple',
+        'image'   => 'http://placehold.it/640x360',
+        'text'    => ''
+      )
+    )
+  );
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -72,6 +204,9 @@ function page(){
       cursor:   hand;
       cursor:pointer;
     }
+    .gray-bg {
+      background-color: #eee;
+    }
   </style>
 
 </head>
@@ -107,9 +242,9 @@ function page(){
               </ul>
             </li>
             -->
-            <li><a href="#">Recipes </a></li>
-            <li><a href="#">Workouts </a></li>
-            <li><a href="#">Vlog </a></li>
+            <li><a href="/?pg=recipes">Recipes </a></li>
+            <li><a href="/">Workouts </a></li>
+            <li><a href="http://www.sarahsliman.com">Vlog </a></li>
           </ul>
           <!--
           <form class="navbar-form navbar-left" role="search">
@@ -378,68 +513,55 @@ function page(){
       <!-- Main content -->
       <section class="content">
 
+          <?php
+          foreach ($recipes AS $key => $value):
+          ?>
+
         <div class="box box-default">
           <div class="box-header with-border">
-            <h3 class="box-title" data-control="breakfast">Breakfast</h3>
+            <h3 class="box-title" data-control="breakfast"><?php echo $key; ?></h3>
           </div>
           <div class="box-body breakfast">
-              
-            <div class="row">
+
+          <?php foreach ($value AS $keys => $recipe): ?>
+
+            <?php if ($keys % 2 === 0): ?>
+
+            <div class="row gray-bg">
               <div class="col-xs-12 col-sm-6">
-                <h2>Egg Fit Muffins</h2>
-                <p>Serving Size – 3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein</p>
-                <p>Ingredients:</p>
-                <ul>
-                  <li>12 Eggs</li>
-                  <li>2 Bell Peppers, Chopped</li>
-                  <li>1/2 Cup Chopped Onions</li>
-                  <li>2 Cups Chopped Spinich</li>
-                  <li>Sea Salt</li>
-                  <li>Black Pepper</li>
-                  <li>Tumeric (optional)</li>
-                </ul>
-                <p>Directions:</p>
-                <ol>
-                  <li>Combine all ingredients in a bowl and whisk together.</li>
-                  <li>Using a mini muffin pan, pour the mixture in each muffin tin</li>
-                  <li>Makes about 12 muffins</li>
-                </ol>
+                <h2><?php echo $recipe['title']; ?></h2>
+                <?php echo $recipe['html']; ?>
               </div>
               <div class="col-xs-12 col-sm-6">
                 <div class="video-container">
-                  <img src="http://www.placehold.it/640x360" class="img-responsive" />
+                  <img src="<?php echo $recipe['image']; ?>" class="img-responsive" />
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <div class="video-container">
-                  <iframe width="853" height="480" src="https://www.youtube.com/embed/PxV5ogi_5dI" frameborder="0" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <h2>Week 3 - Day 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
+          <?php else: ?>
 
             <div class="row">
               <div class="col-xs-12 col-sm-6">
                 <div class="video-container">
-                  <iframe width="853" height="480" src="https://www.youtube.com/embed/PxV5ogi_5dI" frameborder="0" allowfullscreen></iframe>
+                  <img src="<?php echo $recipe['image']; ?>" class="img-responsive" />
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6">
-                <h2>Week 3 - Day 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <h2><?php echo $recipe['title']; ?></h2>
+                <?php echo $recipe['html']; ?>
               </div>
             </div>
+
+          <?php endforeach; ?>
+
 
           </div>
           <!-- /.box-body -->
         </div>
         <!-- /.box -->
+
+      <?php endforeach; ?>
 
       </section>
 
