@@ -83,7 +83,7 @@ function recipes(){
         'text'    => ''
       ),
     ),
-    'Lunch-Dinner'  => array(
+    'Lunch/Dinner'  => array(
       array(
         'title'   => 'Sweet Potato Hemp Quinoa Bowl',
         'image'   => 'http://placehold.it/640x360',
@@ -521,9 +521,9 @@ function recipes(){
 
         <div class="box box-default">
           <div class="box-header with-border">
-            <h3 class="box-title" data-control="breakfast"><?php echo $key; ?></h3>
+            <h3 class="box-title" data-control="<?php echo strtolower($key); ?>"><?php echo $key; ?></h3>
           </div>
-          <div class="box-body breakfast">
+          <div class="box-body <?php echo strtolower($key); ?>">
 
           <?php foreach ($value AS $keys => $recipe): ?>
 
@@ -532,7 +532,7 @@ function recipes(){
             <div class="row gray-bg">
               <div class="col-xs-12 col-sm-6">
                 <h2><?php echo $recipe['title']; ?></h2>
-                <?php echo $recipe['html']; ?>
+                <?php echo $recipe['text']; ?>
               </div>
               <div class="col-xs-12 col-sm-6">
                 <div class="video-container">
@@ -551,7 +551,7 @@ function recipes(){
               </div>
               <div class="col-xs-12 col-sm-6">
                 <h2><?php echo $recipe['title']; ?></h2>
-                <?php echo $recipe['html']; ?>
+                <?php echo $recipe['text']; ?>
               </div>
             </div>
 
