@@ -555,6 +555,8 @@ function recipes(){
               </div>
             </div>
 
+          <?php endif; ?>
+
           <?php endforeach; ?>
 
 
