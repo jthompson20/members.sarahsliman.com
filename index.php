@@ -530,7 +530,7 @@ function recipes(){
             <?php if ($keys % 2 === 0): ?>
 
             <div class="row gray-bg">
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-12 col-sm-6" style="padding-left:50px;">
                 <h2><?php echo $recipe['title']; ?></h2>
                 <?php echo $recipe['text']; ?>
               </div>
@@ -544,7 +544,7 @@ function recipes(){
           <?php else: ?>
 
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-12 col-sm-6" style="padding-left:50px;">
                 <div class="video-container">
                   <img src="<?php echo $recipe['image']; ?>" class="img-responsive" />
                 </div>
