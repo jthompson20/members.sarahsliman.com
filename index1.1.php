@@ -1362,20 +1362,24 @@ h1.page-header {
 
 												            <?php if ($keys % 2 === 0): ?>
 
-												            <div class="row" style="background-color:#eee;">
+												            <div class="row" style="padding:10px;">
 																<div class="col-xs-12 col-sm-6">
 																	<iframe width="100%" height="300" src="<?php echo $exercise['video']; ?>" frameborder="0" allowfullscreen></iframe>
 																</div>
 																<div class="col-xs-12 col-sm-6">
-																	<?php echo $exercise['description']; ?>
+																	<p><strong><?php echo $exercise['name']; ?></strong></p>
+																	<p><?php echo $exercise['description']; ?></p>
+																	<p><a href="javascript:alert('play audio');"><img class="img-responsive" src="http://www.lockedrecords.com/wp-content/uploads/2017/04/listennowgreen.png" /></a></p>
 																</div>
 												            </div>
 
 												          <?php else: ?>
 
-												            <div class="row">
+												            <div class="row" style="padding:10px;">
 																<div class="col-xs-12 col-sm-6">
-																	<?php echo $exercise['description']; ?>
+																	<p><strong><?php echo $exercise['name']; ?></strong></p>
+																	<p><?php echo $exercise['description']; ?></p>
+																	<p><a href="javascript:alert('play audio');"><img class="img-responsive" src="http://www.lockedrecords.com/wp-content/uploads/2017/04/listennowgreen.png" /></a></p>
 																</div>
 																<div class="col-xs-12 col-sm-6">
 																	<iframe width="100%" height="300" src="<?php echo $exercise['video']; ?>" frameborder="0" allowfullscreen></iframe>
