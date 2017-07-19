@@ -1281,7 +1281,7 @@ h1.page-header {
 													<div class="panel-body">
 														<div class="row">
 															<div class="col-xs-12 col-sm-6">
-															<iframe width="100%" height="360" src="<?php echo $workout['video']; ?>" frameborder="0" allowfullscreen></iframe>
+															<iframe width="100%" height="300" src="<?php echo $workout['video']; ?>" frameborder="0" allowfullscreen></iframe>
 															</div>
 															<div class="col-xs-12 col-sm-6">
 																<?php echo $workout['description']; ?>
@@ -1354,6 +1354,12 @@ $(function () {
   		$('.search-input').focus();
   	});
   });
+
+$(document).ready(function(){
+	if ($('.nav-tabs li .active')){
+		$('.nav-tabs li .active').click();
+	}
+});
   </script>
 
 </body>
