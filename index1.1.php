@@ -28,123 +28,386 @@ function recipes(){
       array(
         'title'   => 'Egg Fit Muffins',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => '
-                <p>Serving Size – 3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein</p>
-                <p>Ingredients:</p>
-                <ul>
-                  <li>12 Eggs</li>
-                  <li>2 Bell Peppers, Chopped</li>
-                  <li>1/2 Cup Chopped Onions</li>
-                  <li>2 Cups Chopped Spinich</li>
-                  <li>Sea Salt</li>
-                  <li>Black Pepper</li>
-                  <li>Tumeric (optional)</li>
-                </ul>
-                <p>Directions:</p>
-                <ol>
-                  <li>Combine all ingredients in a bowl and whisk together.</li>
-                  <li>Using a mini muffin pan, pour the mixture in each muffin tin</li>
-                  <li>Makes about 12 muffins</li>
-                </ol>'
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Blueberry Protein Smoothie',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Protein Shake',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Protein Overnight Oats',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Protein Greek Yogurt',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Scrambled Eggs and Veggies',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Overnight Quinoa Bowl',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Bacon Asparagus Omelet',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
     ),
     'Lunch-Dinner'  => array(
       array(
         'title'   => 'Sweet Potato Hemp Quinoa Bowl',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Broccoli & Steak Salad',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Taco Bowl',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Grilled Chicken Plate',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Black Bean Pasta',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Quinoa Fried Rice',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Asian Chicken Stir Fry',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Chicken and Broccoli w/Peanut Sauce',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
     ),
     'Snacks'        => array(
       array(
         'title'   => 'Coconut Milk Protein Yogurt',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Edamame',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Almond Milk Protein Shake',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       ),
       array(
         'title'   => 'Apple',
         'image'   => 'http://placehold.it/640x360',
-        'text'    => ''
+        'serving' => '3 muffins – 240 cal, 14g fat, 6g carbs, 21g protein',
+        'ingredients'	=> array(
+        	'12 Eggs',
+        	'2 Bell Peppers, Chopped',
+        	'1/2 Cup Chopped Onions',
+        	'2 Cups Chopped Spinich',
+        	'Sea Salt',
+        	'Black Pepper',
+        	'Tumeric (optional)'
+        ),
+        'directions' 	=> array(
+        	'Combine all ingredients in a bowl and whisk together',
+        	'Using a mini muffin pan, pour the mixture in each muffin tin',
+        	'Makes about 12 muffins'
+        )
       )
     )
   );
@@ -906,7 +1169,21 @@ h1.page-header {
 																<img src="<?php echo $recipe['image']; ?>" class="img-responsive" />
 															</div>
 															<div class="col-xs-12 col-sm-6">
-																<?php echo $recipe['text']; ?>
+																<p>Serving Size:<br/><?php echo $recipe['serving']; ?></p>
+																<p>Ingredients:</p>
+																<ul>
+																<?php foreach ($recipe['ingredients'] AS $ingredient): ?>
+																	<li><?php echo $ingredient; ?></li>
+																<?php endforeach; ?>
+																</ul>
+															</div>
+															<div class="col-xs-12">
+															<p>Directions:</p>
+																<ol>
+																<?php foreach ($recipe['directions'] AS $direction): ?>
+																	<li><?php echo $direction; ?></li>
+																<?php endforeach; ?>
+																</ol>
 															</div>
 														</div>
 													</div>
