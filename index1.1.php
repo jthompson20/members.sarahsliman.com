@@ -1253,7 +1253,7 @@ h1.page-header {
 			<?php $workouts = workouts(); ?>
 
 		    <div class="row">
-		    	<div class="col-md-10">
+		    	<div class="col-md-9">
 		            <div class="panel with-nav-tabs panel-default">
 		                <div class="panel-heading">
 	                        <ul class="nav nav-tabs">
