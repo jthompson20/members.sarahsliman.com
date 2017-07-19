@@ -27,7 +27,7 @@ function workouts(){
 					'name'			=> 'Workout #1',
 					'exercises'		=> array(
 						array(
-							'name'			=> 'Jumping Jacks'
+							'name'			=> 'Jumping Jacks',
 							'image'			=> '',
 							'audio'			=> '',
 							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -54,7 +54,7 @@ function workouts(){
 					'name'			=> 'Workout #2',
 					'exercises'		=> array(
 						array(
-							'name'			=> 'Burpee'
+							'name'			=> 'Burpee',
 							'image'			=> '',
 							'audio'			=> '',
 							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -86,7 +86,7 @@ function workouts(){
 					'name'			=> 'Workout #1',
 					'exercises'		=> array(
 						array(
-							'name'			=> 'Burpee'
+							'name'			=> 'Burpee',
 							'image'			=> '',
 							'audio'			=> '',
 							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -113,7 +113,7 @@ function workouts(){
 					'name'			=> 'Workout #2',
 					'exercises'		=> array(
 						array(
-							'name'			=> 'Run'
+							'name'			=> 'Run',
 							'image'			=> '',
 							'audio'			=> '',
 							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -1335,7 +1335,10 @@ h1.page-header {
 		                        <?php 
 								$cnt=0;
 		                        foreach ($workouts AS $key => $value): ?>
-		                        	<?php $active 	= ($cnt === 0)? 'active': ''; $cnt++; ?>
+		                        	<?php 
+		                        	$active 	= ($cnt === 0)? 'active': ''; 
+		                        	$cnt++; 
+		                        	?>
 		                            <li class="<?php echo $active; ?>"><a href="#tab-workout-week-<?php echo $key; ?>" data-toggle="tab">Week <?php echo ($key+1); ?></a></li>
 		                        <?php endforeach; ?>
 	                        </ul>
@@ -1355,7 +1358,7 @@ h1.page-header {
 													</div>
 													<div class="panel-body">
 
-													<?php foreach ($workout['exercises'] AS $keys => $exercise): ?>
+														<?php foreach ($workout['exercises'] AS $keys => $exercise): ?>
 
 												            <?php if ($keys % 2 === 0): ?>
 
