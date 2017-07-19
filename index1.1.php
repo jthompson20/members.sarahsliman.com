@@ -881,7 +881,7 @@ h1.page-header {
 		                <div class="panel-heading">
 	                        <ul class="nav nav-tabs">
 		                        <?php foreach ($recipes AS $key => $value): ?>
-		                        	<?php $active 	= ($key === 'Breakfast'): 'active': ''; ?>
+		                        	<?php $active 	= ($key === 'Breakfast')? 'active': ''; ?>
 		                            <li class="<?php echo $active; ?>"><a href="#tab-<?php echo $key; ?>" data-toggle="tab"><?php echo $key; ?></a></li>
 		                        <?php endforeach; ?>
 	                        </ul>
