@@ -841,7 +841,7 @@ h1.page-header {
 			<div class="side-menu-container">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="<?php echo $_SERVER['PHP_SELF']; ?>"><span class="glyphicon glyphicon-home"></span> Dashboard</a></li>
-					<li><a href="https://www.facebook.com/groups/1442018715889142/" target="_blank"><span class="glyphicon glyphicon-users"></span> Facebook Group</a></li>
+					<li><a href="https://www.facebook.com/groups/1442018715889142/" target="_blank"><span class="glyphicon glyphicon-user"></span> Facebook Group</a></li>
 					<li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?pg=recipes"><span class="glyphicon glyphicon-apple"></span> Personal Recipes</a></li>
 					<li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?pg=workouts"><span class="glyphicon glyphicon-facetime-video"></span> Power Group Workouts</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-play"></span> Sarah's Vlog <small>(NEW)</small></a></li>
