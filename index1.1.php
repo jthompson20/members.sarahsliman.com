@@ -25,56 +25,35 @@ function workouts(){
 			'workouts'	=> array(
 				array(
 					'name'			=> 'Workout #1',
-					'exercises'		=> array(
-						array(
-							'name'			=> 'Jumping Jacks',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
-						array(
-							'name'			=> 'Handstand',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Don\'t lock your knees',
+						'Use alternative method if too tough'
 					)
 				),
 				array(
 					'name'			=> 'Workout #2',
-					'exercises'		=> array(
-						array(
-							'name'			=> 'Burpee',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
-						array(
-							'name'			=> 'Plank',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Don\'t lock your knees',
+						'Use alternative method if too tough'
+					)
+				),
+				array(
+					'name'			=> 'Workout #3',
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Don\'t lock your knees',
+						'Use alternative method if too tough'
 					)
 				),
 			)
@@ -84,60 +63,28 @@ function workouts(){
 			'workouts'	=> array(
 				array(
 					'name'			=> 'Workout #1',
-					'exercises'		=> array(
-						array(
-							'name'			=> 'Burpee',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
-						array(
-							'name'			=> 'Bench Press',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Don\'t lock your knees',
+						'Use alternative method if too tough'
 					)
 				),
 				array(
 					'name'			=> 'Workout #2',
-					'exercises'		=> array(
-						array(
-							'name'			=> 'Run',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
-						array(
-							'name'			=> 'Squat',
-							'image'			=> '',
-							'audio'			=> '',
-							'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
-							'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-							'remember'		=> array(
-								'Don\'t lock your knees',
-								'Use alternative method if too tough'
-							)
-						),
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Don\'t lock your knees',
+						'Use alternative method if too tough'
 					)
 				),
 			)
-		),
+		)
 	);
 }
 
@@ -1358,38 +1305,16 @@ h1.page-header {
 													</div>
 													<div class="panel-body">
 
-														<?php foreach ($workout['exercises'] AS $keys => $exercise): ?>
+											            <div class="row" style="padding:10px;">
+															<div class="col-xs-12 col-sm-6">
+																<iframe width="100%" height="300" src="<?php echo $workout['video']; ?>" frameborder="0" allowfullscreen></iframe>
+															</div>
+															<div class="col-xs-12 col-sm-6">
+																<p><?php echo $workout['description']; ?></p>
+																<p><a href="javascript:alert('play audio <?php echo $workout['audio']; ?>');"><img style="max-width:200px;" class="img-responsive" src="http://www.lockedrecords.com/wp-content/uploads/2017/04/listennowgreen.png" /></a></p>
+															</div>
+											            </div>
 
-												            <?php if ($keys % 2 === 0): ?>
-
-												            <div class="row" style="padding:10px;">
-																<div class="col-xs-12 col-sm-6">
-																	<iframe width="100%" height="300" src="<?php echo $exercise['video']; ?>" frameborder="0" allowfullscreen></iframe>
-																</div>
-																<div class="col-xs-12 col-sm-6">
-																	<p><strong><?php echo $exercise['name']; ?></strong></p>
-																	<p><?php echo $exercise['description']; ?></p>
-																	<p><a href="javascript:alert('play audio');"><img class="img-responsive" src="http://www.lockedrecords.com/wp-content/uploads/2017/04/listennowgreen.png" /></a></p>
-																</div>
-												            </div>
-
-												          <?php else: ?>
-
-												            <div class="row" style="padding:10px;">
-																<div class="col-xs-12 col-sm-6">
-																	<p><strong><?php echo $exercise['name']; ?></strong></p>
-																	<p><?php echo $exercise['description']; ?></p>
-																	<p><a href="javascript:alert('play audio');"><img class="img-responsive" src="http://www.lockedrecords.com/wp-content/uploads/2017/04/listennowgreen.png" /></a></p>
-																</div>
-																<div class="col-xs-12 col-sm-6">
-																	<iframe width="100%" height="300" src="<?php echo $exercise['video']; ?>" frameborder="0" allowfullscreen></iframe>
-																</div>
-																
-												            </div>
-
-												          <?php endif; ?>
-
-														<?php endforeach; ?>
 													</div>
 												</div>
 											</div>
