@@ -560,7 +560,7 @@ h1.page-header {
 							<li class=""><a href="#">Account</a></li>
 							<li class=""><a href="#">Billing</a></li>
 							<li class="divider"></li>
-							<li><a href="#">Logout</a></li>
+							<li><a href="/logout.php">Logout</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -577,9 +577,9 @@ h1.page-header {
 			<!-- Main Menu -->
 			<div class="side-menu-container">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-plane"></span> Recipes</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Workouts</a></li>
+					<li class="active"><a href="<?php echo $_SERVER['PHP_SELF']; ?>"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?pg=recipes"><span class="glyphicon glyphicon-plane"></span> Recipes</a></li>
+					<li><a href="<?php echo $_SERVER['PHP_SELF']; ?>?pg=workouts"><span class="glyphicon glyphicon-user"></span> Workouts</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Vlog</a></li>
 
 
@@ -589,21 +589,121 @@ h1.page-header {
 
 	</div>
 </div>  		</div>
-  		<div class="col-md-10 content">
-  			  <div class="panel panel-default">
-	<div class="panel-heading">
-		Dashboard
-	</div>
-	<div class="panel-body">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</div>
-</div>
-  		</div>
+  		
+
+
+		<?php if ($page === ''){ ?>
+
+			<div class="col-md-10 content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Sarah Sliman | Power Group
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+
+		<?php } elseif ($page === 'recipes') { ?>
+
+			<?php 
+			// grab recipes
+			$recipes  = recipes();
+			?>
+
+		    <div class="row">
+		    	<div class="col-md-8">
+		            <div class="panel with-nav-tabs panel-default">
+		                <div class="panel-heading">
+	                        <ul class="nav nav-tabs">
+		                        <?php foreach ($recipes AS $key => $value): ?>
+		                            <li class="active"><a href="#tab-<?php echo $key; ?>" data-toggle="tab"><?php echo $key; ?></a></li>
+		                        <?php endforeach; ?>
+	                        </ul>
+		                </div>
+		                <div class="panel-body">
+		                    <div class="tab-content">
+
+		                        <?php foreach ($recipes AS $key => $value): ?>
+
+		                        	<div class="tab-pane fade in active" id="tab-<?php echo $key; ?>">
+
+		                        		<?php foreach ($value AS $keys => $recipe): ?>
+
+											<div class="col-xs-12 content">
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<?php echo $recipe['title']; ?>
+													</div>
+													<div class="panel-body">
+														<div class="row">
+															<div class="col-xs-12 col-sm-6">
+																<img src="<?php echo $recipe['image']; ?>" class="img-responsive" />
+															</div>
+															<div class="col-xs-12 col-sm-6">
+																<?php echo $recipe['text']; ?>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+		                        		<?php endforeach; ?>
+
+
+		                        	</div>
+
+		                        <?php endforeach; ?>
+
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+		<?php } elseif ($page === 'workouts') { ?>
+
+			<div class="col-md-10 content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Sarah Sliman | Power Group
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+
+		<?php } else { ?>
+
+			<div class="col-md-10 content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Not Found
+					</div>
+					<div class="panel-body">
+						The page that you're looking for does not exist.  <a href="<?php echo $_SERVER['PHP_SELF']; ?>">Click here to return to the Dashboard.</a>
+					</div>
+				</div>
+			</div>
+
+		<?php } ?>
+
+
+
+
+
   		<footer class="pull-left footer">
   			<p class="col-md-12">
   				<hr class="divider">
