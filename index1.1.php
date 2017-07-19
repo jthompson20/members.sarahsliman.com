@@ -21,10 +21,8 @@ function page(){
 function workouts(){
 	return array(
 		array(
-			'name' 		=> 'Week 1',
 			'workouts'	=> array(
 				array(
-					'name'			=> 'Workout #1',
 					'image'			=> '',
 					'audio'			=> '',
 					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -35,7 +33,6 @@ function workouts(){
 					)
 				),
 				array(
-					'name'			=> 'Workout #2',
 					'image'			=> '',
 					'audio'			=> '',
 					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -46,7 +43,6 @@ function workouts(){
 					)
 				),
 				array(
-					'name'			=> 'Workout #3',
 					'image'			=> '',
 					'audio'			=> '',
 					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -59,10 +55,8 @@ function workouts(){
 			)
 		),
 		array(
-			'name' 		=> 'Week 2',
 			'workouts'	=> array(
 				array(
-					'name'			=> 'Workout #1',
 					'image'			=> '',
 					'audio'			=> '',
 					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -73,7 +67,6 @@ function workouts(){
 					)
 				),
 				array(
-					'name'			=> 'Workout #2',
 					'image'			=> '',
 					'audio'			=> '',
 					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
@@ -1296,12 +1289,12 @@ h1.page-header {
 
 		                        	<div class="tab-pane fade in active" id="tab-workout-week-<?php echo $key; ?>">
 
-			                        	<?php foreach ($value['workouts'] AS $workout): ?>
+			                        	<?php foreach ($value['workouts'] AS $keys => $workout): ?>
 
 											<div class="col-xs-12 content">
 												<div class="panel panel-default">
 													<div class="panel-heading">
-														<strong style="padding:10px;"><?php echo $workout['name']; ?></strong>
+														<strong style="padding:10px;">Week <?php echo ($key+1); ?> - Workout #<?php echo $keys+1; ?></strong>
 													</div>
 													<div class="panel-body">
 
@@ -1311,7 +1304,7 @@ h1.page-header {
 															</div>
 															<div class="col-xs-12 col-sm-6">
 																<p><?php echo $workout['description']; ?></p>
-																<p><a href="javascript:alert('play audio <?php echo $workout['audio']; ?>');"><img style="max-width:200px;" class="img-responsive" src="http://www.lockedrecords.com/wp-content/uploads/2017/04/listennowgreen.png" /></a></p>
+																<p><center><a href="javascript:alert('play audio <?php echo $workout['audio']; ?>');"><img style="max-width:200px;" class="img-responsive" src="http://www.lockedrecords.com/wp-content/uploads/2017/04/listennowgreen.png" /></a></center></p>
 															</div>
 											            </div>
 
