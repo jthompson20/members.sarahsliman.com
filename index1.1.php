@@ -208,15 +208,15 @@ function recipes(){
 			</form>
 			-->
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="http://www.pingpong-labs.com" target="_blank">Facebook | Power Group</a></li>
+				<li><a href="http://www.pingpong-labs.com" target="_blank">Facebook</a></li>
 				<li class="dropdown ">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-						Account
+						Melissa Lombardi
 						<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li class="dropdown-header">SETTINGS</li>
+							<li class=""><a href="#">Account</a></li>
 							<li class=""><a href="#">Billing</a></li>
-							<li class=""><a href="#">Profile</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Logout</a></li>
 						</ul>
@@ -227,8 +227,8 @@ function recipes(){
 	</nav>  	<div class="container-fluid main-container">
   		<div class="col-md-2 sidebar">
   			<div class="row">
-	<!-- uncomment code for absolute positioning tweek see top comment in css -->
-	<div class="absolute-wrapper"> </div>
+	<!-- uncomment code for absolute positioning tweek see top comment in css --
+	<div class="absolute-wrapper"> </div>-->
 	<!-- Menu -->
 	<div class="side-menu">
 		<nav class="navbar navbar-default" role="navigation">
