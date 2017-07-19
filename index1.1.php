@@ -19,7 +19,51 @@ function page(){
 }
 
 function workouts(){
-
+	return array(
+		array(
+			'name' 		=> 'Week 1',
+			'workouts'	=> array(
+				array(
+					'name'			=> 'Jumping Jacks',
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Don\'t lock your knees',
+						'Use alternative method if too tough'
+					)
+				),
+				array(
+					'name'			=> 'Handstand',
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Don\'t lock your knees',
+						'Use alternative method if too tough'
+					)
+				),
+			)
+		),
+		array(
+			'name' 		=> 'Week 2',
+			'workouts'	=> array(
+				array(
+					'name'			=> 'Bicycle Kick',
+					'image'			=> '',
+					'audio'			=> '',
+					'video'			=> 'https://www.youtube.com/embed/PxV5ogi_5dI',
+					'description'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+					'remember'		=> array(
+						'Kick it up a notch',
+						'Use alternative method if too tough'
+					)
+				)
+			)
+		),
+	);
 }
 
 function recipes(){
@@ -1206,20 +1250,61 @@ h1.page-header {
 
 		<?php } elseif ($page === 'workouts') { ?>
 
-			<div class="col-md-10 content">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						Sarah Sliman | Power Group
+			<?php $workouts = workouts(); ?>
+
+		    <div class="row">
+		    	<div class="col-md-8">
+		            <div class="panel with-nav-tabs panel-default">
+		                <div class="panel-heading">
+	                        <ul class="nav nav-tabs">
+		                        <?php 
+								$cnt=0;
+		                        foreach ($workouts AS $key => $value): ?>
+		                        	<?php $active 	= ($cnt === 0)? 'active': ''; $cnt++; ?>
+		                            <li class="<?php echo $active; ?>"><a href="#tab-workout-week-<?php echo $key; ?>" data-toggle="tab"><?php echo $value['name']; ?></a></li>
+		                        <?php endforeach; ?>
+	                        </ul>
+		                </div>
+		                <div class="panel-body">
+		                    <div class="tab-content">
+		                        <?php foreach ($workouts AS $key => $value): ?>
+
+		                        	<div class="tab-pane fade in active" id="tab-workout-week-<?php echo $key; ?>">
+
+			                        	<?php foreach ($value['workouts'] AS $workout): ?>
+
+											<div class="col-xs-12 content">
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<strong style="padding:10px;"><?php echo $workout['name']; ?></strong>
+													</div>
+													<div class="panel-body">
+														<div class="row">
+															<div class="col-xs-12 col-sm-6">
+															<iframe width="853" height="480" src="<?php echo $workout['video']; ?>" frameborder="0" allowfullscreen></iframe>
+															</div>
+															<div class="col-xs-12 col-sm-6">
+																<?php echo $workout['description']; ?>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										<?php endforeach; ?>
+
+									</div>
+
+								<?php endforeach; ?>
+
+							</div>
+
+						</div>
+
 					</div>
-					<div class="panel-body">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
+
 				</div>
+
 			</div>
 
 		<?php } else { ?>
