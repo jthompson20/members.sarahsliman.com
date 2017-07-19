@@ -1253,7 +1253,7 @@ h1.page-header {
 			<?php $workouts = workouts(); ?>
 
 		    <div class="row">
-		    	<div class="col-md-8">
+		    	<div class="col-md-10">
 		            <div class="panel with-nav-tabs panel-default">
 		                <div class="panel-heading">
 	                        <ul class="nav nav-tabs">
@@ -1281,7 +1281,7 @@ h1.page-header {
 													<div class="panel-body">
 														<div class="row">
 															<div class="col-xs-12 col-sm-6">
-															<iframe width="853" height="480" src="<?php echo $workout['video']; ?>" frameborder="0" allowfullscreen></iframe>
+															<iframe width="100%" height="360" src="<?php echo $workout['video']; ?>" frameborder="0" allowfullscreen></iframe>
 															</div>
 															<div class="col-xs-12 col-sm-6">
 																<?php echo $workout['description']; ?>
