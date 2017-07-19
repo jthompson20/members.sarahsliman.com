@@ -881,7 +881,8 @@ h1.page-header {
 		                <div class="panel-heading">
 	                        <ul class="nav nav-tabs">
 		                        <?php foreach ($recipes AS $key => $value): ?>
-		                            <li class="active"><a href="#tab-<?php echo $key; ?>" data-toggle="tab"><?php echo $key; ?></a></li>
+		                        	<?php $active 	= ($key === 'Breakfast'): 'active': ''; ?>
+		                            <li class="<?php echo $active; ?>"><a href="#tab-<?php echo $key; ?>" data-toggle="tab"><?php echo $key; ?></a></li>
 		                        <?php endforeach; ?>
 	                        </ul>
 		                </div>
@@ -897,7 +898,7 @@ h1.page-header {
 											<div class="col-xs-12 content">
 												<div class="panel panel-default">
 													<div class="panel-heading">
-														<?php echo $recipe['title']; ?>
+														<strong style="padding:10px;"><?php echo $recipe['title']; ?><strong>
 													</div>
 													<div class="panel-body">
 														<div class="row">
