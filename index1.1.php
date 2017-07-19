@@ -898,7 +898,7 @@ h1.page-header {
 											<div class="col-xs-12 content">
 												<div class="panel panel-default">
 													<div class="panel-heading">
-														<strong style="padding:10px;"><?php echo $recipe['title']; ?><strong>
+														<strong style="padding:10px;"><?php echo $recipe['title']; ?></strong>
 													</div>
 													<div class="panel-body">
 														<div class="row">
