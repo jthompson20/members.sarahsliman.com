@@ -499,6 +499,10 @@ function recipes(){
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <style>
+.hideme {
+	display:none;
+}
+
 h1.page-header {
     margin-top: -5px;
 }
@@ -1199,7 +1203,7 @@ h1.page-header {
 		</style>
 
 		    <div class="row">
-		    	<div class="col-md-8">
+		    	<div class="col-md-9">
 		            <div class="panel with-nav-tabs panel-default">
 		                <div class="panel-heading">
 	                        <ul class="nav nav-tabs">
@@ -1293,10 +1297,10 @@ h1.page-header {
 
 											<div class="col-xs-12 content">
 												<div class="panel panel-default">
-													<div class="panel-heading">
+													<div class="panel-heading week-toggle" data-toggled="week-<?php echo ($key+1); ?>-workout-<?php echo ($keys+1); ?>">
 														<strong style="padding:10px;">Week <?php echo ($key+1); ?> - Workout #<?php echo $keys+1; ?></strong>
 													</div>
-													<div class="panel-body">
+													<div class="panel-body week-<?php echo ($key+1); ?>-workout-<?php echo ($keys+1); ?>">
 
 											            <div class="row" style="padding:10px;">
 															<div class="col-xs-12 col-sm-6">
@@ -1377,9 +1381,28 @@ $(function () {
   });
 
 $(document).ready(function(){
-	if ($('.nav-tabs li .active')){
-		$('.nav-tabs li .active').click();
+	
+
+	var toggle 	= $('.week-toggle');
+	if (toggle){
+
+		// close them all
+		toggle.each(function(key,val){
+			var toggler 	= $(this).data('toggled');
+			$('.' + toggler).addClass('hideme');
+		});
+
+		toggle.on('click',function(){
+			var toggler 	= $(this).data('toggled');
+			if ($('.' + toggler).hasClass('hideme')){
+				$('.' + toggler).removeClass('hideme');
+			} else {
+				$('.' + toggler).addClass('hideme');
+			}
+		});
+
 	}
+
 });
   </script>
 
